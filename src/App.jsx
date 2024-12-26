@@ -21,10 +21,10 @@ const App = () => {
       <div className="w-full h-screen duration-200 flex flex-wrap justify-center items-center " style={{ backgroundColor: color }}>
 
           {colorValue.map((item, index) => (
-            <div key={index} >
+            <div key={index} className="bg-black py-2 rounded-md ">
               <button
                 onClick={() => setColor(item.color)}
-                className="px-6 py-2 mx-1 border border-white rounded-lg bg-black text-white"
+                className="px-6 py-2 mx-1 border border-black rounded-lg  text-black" style={{ backgroundColor: item.color }}
                 >{item.color}</button>
             </div>
           ))}
